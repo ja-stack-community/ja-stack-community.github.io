@@ -1,0 +1,389 @@
+/* 基本設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background-color: #f2f4f6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #004080;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #001f3f;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+header h1 a {
+    color: #001f3f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: #001f3f; 
+    color: #ffffff;
+    padding: 35px 0;
+    text-align: center;
+}
+
+.hero-title {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    padding: 0;
+    border: none;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.hero-text {
+    color: #ffffff !important;
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* コンテンツ */
+.content-section {
+    background: #fff;
+    padding: 25px 35px;
+    margin: 15px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-left: 4px solid #001f3f;
+    padding-left: 12px;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #001f3f;
+}
+
+/* 交流の場セクション（フォームリンク版） */
+.platform-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+
+.platform-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.join-info p {
+    margin: 0 0 15px 0;
+    font-size: 0.9rem;
+}
+
+.form-link-area {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.form-btn {
+    display: inline-block;
+    background: #001f3f;
+    color: #fff !important;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    text-decoration: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.form-btn:hover {
+    background: #004080;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.form-details {
+    display: block;
+    font-size: 0.75rem !important;
+    color: #777;
+    margin: 0 !important;
+}
+
+/* リストスタイル */
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-unstyled li {
+    padding: 6px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.date {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+.standard-list, .link-list {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.standard-list li, .link-list li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.link-list {
+    list-style-type: square;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: 0.75rem;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    .hero-title {
+        font-size: 1.2rem;
+    }
+    .content-section {
+        padding: 20px;
+    }
+}
+/* --- 趣旨説明ページ用追加デザイン --- */
+
+/* 趣旨説明の記事エリア */
+.concept-article {
+    background: #fff;
+    padding: 50px 60px;
+    margin: 30px 0;
+    line-height: 1.8;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-family: 'Noto Serif JP', serif;
+    color: #222;
+}
+
+.concept-title {
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #001f3f;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.concept-article h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    border-left: 4px solid #001f3f;
+    padding-left: 12px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    color: #001f3f;
+}
+
+.concept-hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+}
+
+/* 発起人リスト：1カラムに変更 */
+.founder-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.founder-list li {
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-family: 'Noto Sans JP', sans-serif; /* 氏名はゴシック系で見やすく */
+}
+
+/* リンクのデザイン */
+.concept-link-area {
+    margin-top: 15px;
+}
+
+.more-link {
+    font-weight: bold;
+    color: #004080;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #004080;
+    padding-bottom: 2px;
+}
+
+.more-link:hover {
+    color: #d9534f;
+    border-bottom-color: #d9534f;
+    text-decoration: none;
+}
+
+.back-home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid #001f3f;
+    color: #001f3f;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn-outline:hover {
+    background: #001f3f;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 600px) {
+    .concept-article {
+        padding: 30px 20px;
+    }
+    .founder-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* トップページのリンクエリア */
+.concept-link-area {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fdfdfd;
+    border-radius: 4px;
+}
+
+.more-link {
+    display: inline-block;
+    font-weight: bold;
+    color: #004080;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.more-link:hover {
+    color: #d9534f;
+    border-bottom: 1px solid #d9534f;
+    text-decoration: none;
+}
+
+.back-home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid #001f3f;
+    color: #001f3f;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #001f3f;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .concept-article {
+        padding: 30px 20px;
+    }
+}
+/* 準備中リボンのスタイル（修正版） */
+body::before {
+    content: "PRE-OPEN / 準備中";
+    position: fixed;
+    top: 25px;      /* 位置を少し下げました */
+    right: -70px;   /* 右端の隠れ具合を調整 */
+    transform: rotate(45deg);
+    width: 350px;   /* 幅を広くして文字を中央に寄せました */
+    background-color: rgba(217, 83, 79, 0.95);
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    pointer-events: none;
+    padding-left: 20px; /* 文字を少し左（画面内側）に寄せるための微調整 */
+}
