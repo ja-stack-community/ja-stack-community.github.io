@@ -387,3 +387,20 @@ body::before {
     pointer-events: none;
     padding-left: 20px; /* 文字を少し左（画面内側）に寄せるための微調整 */
 }
+/* アーカイブページ用のスタイル */
+.archive-year {
+    margin-bottom: 30px;
+}
+
+.archive-year h3 {
+    font-size: 1.1rem;
+    color: #001f3f;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.archive-link-area {
+    margin-top: 15px;
+    text-align: right; /* 右寄せにすることで「次へ」のニュアンスを出す */
+}
