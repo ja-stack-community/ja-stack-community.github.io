@@ -369,13 +369,14 @@ footer {
     }
 }
 /* 準備中リボンのスタイル（修正版） */
+/*
 body::before {
     content: "PRE-OPEN / 準備中";
     position: fixed;
-    top: 25px;      /* 位置を少し下げました */
-    right: -70px;   /* 右端の隠れ具合を調整 */
+    top: 25px;
+    right: -70px;
     transform: rotate(45deg);
-    width: 350px;   /* 幅を広くして文字を中央に寄せました */
+    width: 350px;
     background-color: rgba(217, 83, 79, 0.95);
     color: white;
     text-align: center;
@@ -385,8 +386,9 @@ body::before {
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     pointer-events: none;
-    padding-left: 20px; /* 文字を少し左（画面内側）に寄せるための微調整 */
+    padding-left: 20px;
 }
+*/
 /* アーカイブページ用のスタイル */
 .archive-year {
     margin-bottom: 30px;
